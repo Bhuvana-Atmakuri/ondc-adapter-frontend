@@ -117,7 +117,7 @@ const Home = () => {
       {/* Search Bar */}
       <div style={{ display: "flex", justifyContent: "center", margin: "20px 0" }}>
         <div style={{ width: "60%", maxWidth: "600px" }}>
-          <SearchBar onSearch={handleSearch} />
+          <SearchBar onSearch={handleSearch} placeholder="Search for a product... Ex: Juice" />
         </div>
       </div>
 
