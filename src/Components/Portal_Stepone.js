@@ -5,7 +5,8 @@ import StepTwo_WooCommerce from './StepTwo_WooCommerce';
 import StepTwo_Saelor from './StepTwo_Saelor';
 import Portal_StepThree from './Portal_StepThree';
 import Portal_StepFour from './Portal_StepFour';
-
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Portal_Stepone() {
   const [activeStep, setActiveStep] = useState(1);
@@ -135,7 +136,7 @@ export default function Portal_Stepone() {
       const response = await axios.post(`${process.env.REACT_APP_API_URL}/ondc/${platform.toLowerCase()}/create`, formData);
   
       if (response.status === 200 && response.data && response.data.success) {
-        alert("Form submitted successfully!");
+        toast.success("Product placed successfully!");
         
       } 
     
