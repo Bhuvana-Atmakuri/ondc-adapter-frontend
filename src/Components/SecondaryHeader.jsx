@@ -55,7 +55,7 @@ const SecondaryHeader = () => {
   };
 
   return (
-    <header className="flex justify-between items-center bg-gradient-to-r from-blue-900 via-blue-900 to-blue-700 text-white py-2 px-2">
+    <header className="flex justify-between items-center  text-white py-2 px-2">
       {/* Left Side: Title */}
       
 
